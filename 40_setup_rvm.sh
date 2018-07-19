@@ -19,3 +19,6 @@ su - deploy -c "rvm autolibs disable"
 # See https://github.com/rvm/rvm/issues/4357
 apt purge libssl-dev && apt install libssl1.0-dev
 
+# Readline is broken in 18.04 too.
+apt-get install -y libreadline-dev
+
